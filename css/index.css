@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 
 /* ------------------------------------------------------------*/
 /* ------------------------------------------------------------*/
-/* ---------------------- nav css -----------------------------*/
+/* ------------------ nav css below ---------------------------*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,7 @@ nav a:active{
 
 /* ------------------------------------------------------------*/
 /* ------------------------------------------------------------*/
-/* ---------------------- main css -----------------------------*/
+/* ------------------ main css below --------------------------*/
 address{
     border-top: 2px solid black;
     padding-top: 35px;
@@ -127,6 +127,7 @@ address{
     margin:25px -15px;
 }
 footer{
+
     padding: 35px;
     text-align: center;
 }
@@ -155,5 +156,36 @@ h1{
     color:white;
     font-weight: 900;
 }
-
 /* ------------------------------------------------------------*/
+/* ---------------------Media Queries--------------------------*/
+/* ------------------------------------------------------------*/
+
+/* ----------------------- Tablet -----------------------------*/
+@media screen and (max-width:800px){
+    .con-bot, .con-top{
+        margin:5px;
+    }
+    .con-bot-container, .con-top-container{
+        margin: -5px;
+        padding: 15px 0px;
+    }
+    nav{
+        margin-top: 35px;
+    }
+    nav a{
+        padding: 5px;
+    }
+    .top-img{
+        display:none;
+    }
+    .top-content{
+        padding: 50px 0px;
+    }
+    .logo-img{
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-left: -91.5px;
+
+    }
+}
