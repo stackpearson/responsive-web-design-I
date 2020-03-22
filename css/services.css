@@ -91,6 +91,9 @@ nav a:hover{
     font-weight: 900;
     border-radius: 5px;
 }
+#nav-logo:hover{
+    background-color: transparent;
+}
  .nav a:active{
      display:block;
      transform: translateY(5px);
@@ -99,6 +102,9 @@ nav a:hover{
 /* ------------------------------------------------------------*/
 /* ------------------------------------------------------------*/
 /* ------------------ main css below --------------------------*/
+footer{
+    text-align: center;
+}
 .gi-img{
     display:block;
     max-width: 100%;
@@ -145,6 +151,7 @@ header{
     margin: 35px 0px;
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 .service-content-bot-flex{
     padding: 15px;
@@ -164,4 +171,62 @@ li{
 }
 ul{
     padding-top: 15px;
+}
+/* ------------------------------------------------------------*/
+/* ---------------------Media Queries--------------------------*/
+/* ------------------------------------------------------------*/
+
+/* ----------------------- Tablet -----------------------------*/
+@media screen and (max-width:800px){
+    nav{
+        margin-top: 35px;
+    }
+    nav a{
+        padding: 5px;
+    }
+    .top-img{
+        display:none;
+    }
+    .top-content{
+        padding: 50px 0px;
+    }
+    .logo-img{
+        position: absolute;
+        top:0;
+        left: 50%;
+        margin-left: -91.5px;
+    }
+    .service-content-bot{
+        justify-content: center;
+    }
+    .service-content-bot-flex:nth-child(1){
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .service-content-bot-flex:nth-child(2){
+        display:none;
+    }
+}
+/* ------------------------------------------------------------*/
+/* ----------------------- Mobile -----------------------------*/
+@media screen and (max-width:500px){
+    body{
+        padding: 5px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .nav{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+        border-bottom: 1px solid gray;
+    }
+    .nav:nth-child(1){
+        border-top: 1px solid gray;
+    }
+    .sc-flex-pair{
+        flex-wrap:wrap;
+    }
 }

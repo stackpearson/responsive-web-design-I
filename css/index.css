@@ -91,12 +91,13 @@ nav a:hover{
     font-weight: 900;
     border-radius: 5px;
 }
+#nav-logo:hover{
+    background-color: transparent;
+}
  .nav a:active{
      display:block;
      transform: translateY(5px);
  }
-}
-
 /* ------------------------------------------------------------*/
 /* ------------------------------------------------------------*/
 /* ------------------ main css below --------------------------*/
