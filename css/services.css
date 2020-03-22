@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 30px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* ------------------------------------------------------------*/
+/* ------------------------------------------------------------*/
+/* ------------------ nav css below ---------------------------*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background: linear-gradient(#0047b3, #003380, #0047b3);
+}
+nav a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+nav a:hover{
+    background-color: gray;
+    color:white;
+    font-weight: 900;
+    border-radius: 5px;
+}
+ .nav a:active{
+     display:block;
+     transform: translateY(5px);
+ }
+
+/* ------------------------------------------------------------*/
+/* ------------------------------------------------------------*/
+/* ------------------ main css below --------------------------*/
+.gi-img{
+    display:block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.h1-services{
+    padding-top: 35px;
+}
+header{
+    padding: 35px 0px;
+}
+.p-learn{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px 30px;
+    background-color: white;
+}
+.p-learn:hover{
+    background-color: darkgray;
+    color: white;
+    font-weight: 900;
+}
+.p-learn:active{
+    display:inline-block;
+    transform: translateY(5px);
+}
+.p-service-content{
+    padding-bottom: 25px;
+}
+.service-content-flex{
+    margin: 15px;
+    padding: 15px;
+    background-color:whitesmoke;
+    border: 1px solid black;
+}
+.sc-flex-pair{
+    display:flex;
+    margin: 0px -15px;
+}
+.service-content-bot{
+    border-top: 1px solid black;
+    padding-top: 35px;
+    margin: 35px 0px;
+    display:flex;
+    justify-content: space-between;
+}
+.service-content-bot-flex{
+    padding: 15px;
+    width: 50%;
+}
+.service-content-bot-flex:nth-child(1){
+    margin-left: -15px;
+}
+.service-content-bot-flex:nth-child(2){
+    margin-right: -15px;
+}
+
+li{
+    list-style-type: disc;
+    padding: 5px;
+    margin-left: 18px;
+}
+ul{
+    padding-top: 15px;
+}
